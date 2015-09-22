@@ -6,7 +6,10 @@
 # Folders
 _obj
 _test
+bin
+pkg
 
+121.201.108.74 portal.qiniu.com
 # Architecture specific extensions/prefixes
 *.[568vq]
 [568vq].out
