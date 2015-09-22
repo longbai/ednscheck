@@ -9,13 +9,6 @@ import (
 	"github.com/miekg/dns"
 )
 
-var (
-	queryType        = flag.String("t", "a", "query type")
-	clientIP         = flag.String("cip", "", "client ip")
-	dnsServer        = flag.String("svr", "8.8.8.8", "dns server")
-	recursionDesired = flag.Bool("rd", true, "recursion desired")
-)
-
 func resolve(server string, domain string, clientIp *string) ([]dns.RR, error) {
 	// queryType
 	var qtype uint16
